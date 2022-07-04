@@ -1,0 +1,985 @@
+/*
+Theme Name: Ave Child
+Theme URI: http://ave.liquid-themes.com/
+Author: Liquid Themes
+Author URI: https://themeforest.net/user/liquidthemes
+Template:  ave
+Description: Smart, Powerful and Unlimited Customizable WordPress Theme.
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Text Domain: ave
+Tags: responsive, retina, rtl-language-support, blog, portfolio, custom-colors, live-editor
+*/
+
+
+/* Load Falanx icon font */
+
+@font-face {
+    font-family: Falanx;
+    src: url(../../o2cfonts/falanx.ttf);
+    font-weight: normal;
+}
+
+.icon-alone1 [data-icon]:before {
+    font-family: 'Falanx';
+    content: "\e902";
+    speak: none;
+    font-size: 75px;
+    color: #000;
+    transition: 0.3s;
+}
+
+.icon-alone1 [data-icon]:hover:before,
+.icon-alone2 [data-icon]:hover:before,
+.icon-alone3 [data-icon]:hover:before {
+    color: #f7af17;
+    transition: 0.3s;
+}
+
+.icon-alone2 [data-icon]:before {
+    font-family: 'Falanx';
+    content: "\e900";
+    speak: none;
+    font-size: 75px;
+    color: #000;
+    transition: 0.3s;
+}
+
+.icon-alone3 [data-icon]:before {
+    font-family: 'Falanx';
+    content: "\e901";
+    speak: none;
+    font-size: 75px;
+    color: #000;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
+.icon-alone1,
+.icon-alone2,
+.icon-alone3 {
+    display: inline-block;
+}
+
+.screen-reader-text {
+    /* Reusable, toolbox kind of class */
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.tabs-nav-side-block .tabs-nav li {
+    border-radius: 0px !important;
+}
+
+.testimonial-whole-filled {
+    border-radius: 50px !important;
+}
+
+.o2c-bullets ul {
+    list-style-position: outside;
+    margin-left: 17px;
+}
+
+.o2c-bullets ul li {
+    padding-bottom: 10px;
+}
+
+.wpcf7-list-item {
+    margin-left: 0px !important;
+}
+
+.wpcf7-form-control-wrap .contactoptions {
+    padding-top: 10px;
+}
+
+.contents-container {
+    margin-top: 100px;
+}
+
+.o2c-white-text {
+    color: #ffffff !important;
+}
+
+
+/* Homepage Responsive Mobile */
+
+@media screen and (min-width: 420px) {
+    .intro-text {
+        padding: 0px 60px !important;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .square-icons .iconbox-icon-container {
+        width: 90px !important;
+        height: 90px !important;
+    }
+    #main-header-collapse-clone .iconbox.text-left {
+        margin-bottom: -2em;
+    }
+    .square-icons .iconbox .contents {
+        font-size: 14px !important;
+    }
+    #information-section,
+    #detect-information-section {
+        background-image: none !important;
+    }
+    #background-cover,
+    #detect-icon-section {
+        background-size: cover;
+    }
+    #testimonials,
+    #testimonials-about,
+    #testimonials-iw-pen-testing,
+    #testimonials-MDR,
+    #testimonials-pen-test {
+        background-image: url(../../uploads/Mobile-Slash-e1594809247980.jpg) !important;
+        background-size: cover !important;
+        background-position: top right !important;
+    }
+    .flickity-page-dots {
+        position: inherit;
+    }
+    .carousel-nav-left .carousel-nav {
+        text-align: center;
+    }
+    .tp-leftarrow {
+        display: none !important;
+    }
+    .intro-text {
+        padding: 0px 40px !important;
+    }
+    .mobile-hidden {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 1024px) {
+    .ipad-width {
+        width: 33%;
+    }
+    #testimonials,
+    #testimonials-about,
+    #testimonials-iw-pen-testing,
+    #testimonials-MDR,
+    #testimonials-pen-test {
+        background-size: cover !important;
+        background-position: center center !important;
+    }
+    .half-ipad-width {
+        width: 45%;
+    }
+    #detect-information-section {
+        padding-right: 30px;
+    }
+    .flickity-page-dots {
+        left: 13px !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .tp-leftarrow,
+    .tp-rightarrow {
+        top: 70% !important;
+    }
+    .tp-leftarrow {
+        left: -30px !important;
+    }
+    .tp-rightarrow {
+        left: 104% !important;
+    }
+    body #gform_wrapper_2 div.ginput_complex.ginput_container.ginput_container_name,
+    body #gform_wrapper_2 div.ginput_complex.ginput_container,
+    body #gform_wrapper_2 .gform_body .gform_fields .gfield input[type=text] {
+        width: 100% !important;
+        margin-right: 5px;
+    }
+    body #gform_wrapper_2 .gform_body .gform_fields .gfield input[type=text] {
+        width: 100% !important;
+        margin-right: 5px;
+    }
+    #homepage-tabs .iconbox-shadow-hover,
+    #homepage-tabs2 .iconbox-shadow-hover {
+        padding: 25px 1%;
+    }
+    .careers-grid {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    [data-mobile-nav-style=modern] .navbar-collapse-clone {
+        justify-content: flex-start !important;
+    }
+    [data-mobile-nav-style=modern] .navbar-collapse-clone ul {
+        padding-bottom: 30px;
+    }
+    .ld-fancy-heading h1 {
+        font-size: 36px !important;
+    }
+    .ld-fancy-heading h3,
+    .ld-fancy-heading h2 {
+        font-size: 30px !important;
+    }
+    .gform_wrapper .gfield_checkbox li label {
+        margin-top: 0px !important;
+    }
+}
+
+
+/* Bullet Edits */
+
+.bullets-edit ul {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.bullets-edit li::before {
+    color: #f7af17;
+    content: "•";
+    display: inline-grid;
+    width: 1em;
+    font-size: 20px;
+    margin-left: -1em;
+}
+
+.bullets-edit li {
+    line-height: 25px;
+    padding-bottom: 10px;
+}
+
+
+/* Meet the team */
+
+#meet-the-team-carousel .fancy-box-footer {
+    display: none;
+}
+
+#meet-the-team-carousel .fancy-box-tour {
+    border: 0px;
+}
+
+
+/* 404 page */
+
+.page-404 {
+    background-image: url(../../uploads/404-background.jpg);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.text-404 h1 {
+    height: 150px;
+}
+
+.btn-gradient-bg {
+    border-radius: 0;
+}
+
+
+/* icon-boxes */
+
+#tick-icon-box-column .iconbox .iconbox-icon-wrap,
+#tick-icon-box-column-2 .iconbox .iconbox-icon-wrap {
+    margin-top: 5px;
+}
+
+
+/* Recaptcha */
+
+.wpcf7-submit {
+    margin-top: 30px;
+}
+
+
+/* Blog Hovers */
+
+.liquid-lp-header {
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.liquid-lp-header:hover {
+    color: #f7af17;
+}
+
+.liquid-lp-title a:hover {
+    color: #f7af17;
+}
+
+.liquid-lp-date:hover .liquid-lp-title {
+    color: #f7af17;
+}
+
+.liquid-lp-title a:hover .liquid-lp-date {
+    color: #f7af17;
+}
+
+#homepage-blog .liquid-lp-date {
+    color: #ffffff !important;
+}
+
+
+/* Blog Category pages */
+
+.titlebar {
+    background: url(../../uploads/category-pages-titlev7.jpg);
+    color: #122135;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.titlebar-inner h1 {
+    color: #122135 !important;
+}
+
+
+/* Form Edits */
+
+.checkbox-789 {
+    line-height: 5px !important;
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+    border: 2px solid #f7af17;
+    margin-left: 0px !important;
+}
+
+div.wpcf7-mail-sent-ok {
+    border: 2px solid #122135;
+    margin-left: 0px !important;
+}
+
+
+/* Gravity Forms CE  */
+
+.ce-description {
+    background-color: #122135;
+    color: #ffffff;
+}
+
+.ce-description p {
+    padding-top: 30px;
+}
+
+.ce-description h4,
+.ce-description h5 {
+    color: #ffffff;
+}
+
+.ce-image {
+    width: 33% !important;
+}
+
+.col2 {
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.tickbox-field {
+    text-align: center;
+    /* 	float: right !important; */
+}
+
+
+/* .tickbox-field .gfield_description {
+	padding: 0 10em;
+} */
+
+.gform_page_fields {
+    background-color: #f7f7f7;
+}
+
+.gform_wrapper .gfield_html.gfield_no_follows_desc,
+.gchoice_3_22_1 {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+#gfield_description_3_22 {
+    margin: 0px !important;
+}
+
+.final-steps {
+    margin-top: -5px;
+}
+
+.icon-align {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.ce-description table tbody th,
+table tbody td,
+table thead th,
+table,
+table tr {
+    border: 0px;
+}
+
+.ce-description h5 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.gform_next_button,
+.gform_previous_button,
+.gform_button {
+    background: #122135;
+    border: 0px;
+    color: #fff;
+    border-radius: 0px;
+    padding: 5px 0.75em;
+    transition: 0.3s;
+}
+
+.gform_next_button:hover,
+.gform_previous_button:hover,
+.gform_button:hover {
+    background: #f7af17;
+}
+
+
+/* .text-field {
+	margin-bottom: -30px;
+}
+.email-field, .phone-field, .company-field {
+	margin-bottom: -60px;
+} */
+
+body .gform_wrapper ul li.gfield {
+    margin-top: 0px;
+}
+
+.row1 h4,
+.gform_wrapper label.gfield_label {
+    font-size: 30px;
+    font-family: 'questrial';
+}
+
+.row2 {
+    padding: 6.5em;
+}
+
+.acceptance-box .gfield_label,
+.acceptance-box2 .gfield_label {
+    display: none !important;
+}
+
+.acceptance-box2 {
+    margin-top: 15px !important;
+}
+
+#field_2_35 {
+    margin-top: 0px;
+}
+
+.row1,
+.row1 h4 {
+    color: #fff;
+}
+
+.tickbox-field h4 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'questrial';
+    margin-top: 10px;
+    Margin-bottom: 0px;
+    line-height: 35px;
+}
+
+.gform_page_footer .input-filled {
+    text-align: right;
+}
+
+.tickbox-field table tbody th {
+    text-align: center;
+    border: 0px;
+}
+
+.row1 {
+    padding-left: 30px;
+}
+
+.gform_wrapper .gfield_description {
+    font-family: 'roboto';
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.gform_wrapper .gfield_checkbox li label {
+    font-family: 'roboto';
+    font-size: 20px;
+    /* 	margin-top: 30px; */
+    transition: 0.3s;
+}
+
+.gform_wrapper .gfield_checkbox li label:hover {
+    color: #f7af17;
+}
+
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox] {
+    /* 	margin-top: 30px; */
+    transition: 0.3s;
+    margin-right: 5px;
+}
+
+.gf_page_steps {
+    border-bottom: 0px !important;
+}
+
+.gform_page_footer {
+    border-top: 0px !important;
+}
+
+.ginput_container,
+.gform_wrapper .field_sublabel_hidden_label .ginput_complex.ginput_container input[type=text] {
+    margin: 0px !important;
+}
+
+.no-label .gfield_label {
+    display: none !important;
+    margin: 10px;
+}
+
+.no-label {
+    margin: 10px 0px;
+}
+
+@media screen and (max-width: 414px) {
+    .mobile-left h2,
+    .mobile-left p {
+        text-align: left !important;
+    }
+    .mobile-left h2 {
+        padding-left: 15px;
+    }
+    .mobile-left2 h2 {
+        text-align: left !important;
+    }
+    .ld-fancy-heading h1 {
+        font-size: 30px !important;
+    }
+    .ld-fancy-heading h3,
+    .ld-fancy-heading h2 {
+        font-size: 30px !important;
+    }
+    #background-cover {
+        background-position: bottom right;
+    }
+    #background-cover h2 {
+        margin-left: -15px;
+    }
+    #mobile-video {
+        background-color: #122135;
+        background-image: none;
+    }
+    .mobile-left3 {
+        text-align: left;
+        margin-left: 0px;
+    }
+    #request-a-quote {
+        background-position: top center !important;
+    }
+    .incident-response .btn-icon {
+        margin-right: 0px !important;
+        margin-bottom: -50px !important;
+        padding-top: 30px;
+    }
+    .ld-pf-item.ld-pf-light h3 {
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+    #footer .ld-fancy-heading h3 {
+        font-size: 20px !important;
+    }
+    .main-footer {
+        margin-top: 30px !important;
+    }
+    .gf_page_steps {
+        display: flex;
+        flex-flow: row;
+    }
+    .col1,
+    .row2,
+    #field_2_36 {
+        display: none;
+    }
+    .col2 {
+        background-color: #122135;
+        padding-left: 15px;
+    }
+    .gform_wrapper .gfield_checkbox li label {
+        padding-bottom: 15px;
+    }
+    .name_first,
+    .name_last,
+    .ginput_container_email,
+    .ginput_container_phone,
+    .ginput_container_text,
+    .ginput_container_textarea,
+    .ginput_container_consent {
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+    #field_3_27,
+    #input_2_27 {
+        margin-bottom: 5px !important;
+        margin-left: 5px !important;
+    }
+    body #gform_wrapper_2 div.ginput_complex.ginput_container.ginput_container_name,
+    body #gform_wrapper_2 div.ginput_complex.ginput_container,
+    body #gform_wrapper_2 .gform_body .gform_fields .gfield input[type=text] {
+        width: 100% !important;
+        margin-right: 5px;
+    }
+    body #gform_wrapper_2 .gform_body .gform_fields .gfield input[type=text] {
+        width: 100% !important;
+        margin-right: 5px;
+    }
+    #testimonials-background {
+        background-image: none !important;
+    }
+    .carousel-nav {
+        margin: 0px !important;
+        text-align: left !important;
+    }
+    ul#cyberessentialsplus li {
+        display: flex !important;
+    }
+    .cta-banner h4 {
+        line-height: 32px;
+        font-size: 22px;
+    }
+    #label_2_8_1,
+    #label_2_22_1,
+    #label_2_25_1,
+    #label_3_22_1 {
+        padding-bottom: 0px !important;
+    }
+    #field_2_8 li.gchoice_2_8_1,
+    #field_2_25 li.gchoice_2_25_1,
+    #field_3_22 li.gchoice_3_22_1 {
+        padding: 20px !important;
+    }
+    #field_2_22 li.gchoice_2_22_1 {
+        padding: 15px !important;
+    }
+    .tickbox-field table tbody th {
+        padding-top: 0px !important;
+    }
+}
+
+
+/* Testimonials */
+
+.flickity-viewport .is-selected .testimonial-whole-shadowed-alt {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.14) !important;
+}
+
+
+/* Home Page Blog - iPad make it 2 column */
+
+@media screen and (max-width: 991px) and (min-width: 500px) {
+    #o2c-home-page-blog .col-md-3 {
+        width: 48%;
+    }
+}
+
+
+/* Home Page Who We Are section - when buttons stack, increase border to look even */
+
+@media screen and (max-width: 370px) {
+    #who-we-are .btn.border-thin {
+        border-width: 3px !important;
+    }
+}
+
+
+/* Home Page Who we are, float blurb right like ipad pro - for ipad normal/mini */
+
+@media screen and (min-width: 768px) {
+    #who-we-are .vc_col-md-offset-6 {
+        width: 50% !important;
+        margin-left: 50% !important;
+    }
+}
+
+
+/* Media Page */
+
+#media-row .liquid-lp-media,
+#media-row .liquid-lp-excerpt,
+#media-row .carousel-container {
+    max-height: 500px !important;
+    max-width: 600px;
+}
+
+.carousel-nav-solid .flickity-prev-next-button:before {
+    background: #122135;
+}
+
+#media-row .liquid-lp-excerpt {
+    display: none;
+}
+
+.carousel-nav-circle .flickity-prev-next-button {
+    border-radius: 0px !important;
+}
+
+.carousel-nav-solid .flickity-prev-next-button:hover {
+    background: #fff;
+    border: 1px white;
+    border-style: solid;
+}
+
+.liquid-lp-title .split-inner:after,
+.liquid-lp-details-lined:before {
+    display: none;
+}
+
+.liquid-lp-details-lined {
+    margin-left: 0px;
+}
+
+.liquid-lp:hover .liquid-lp-details-lined>* {
+    -webkit-transform: translateX(0em);
+    transform: translateX(0em);
+}
+
+.liquid-blog-scheme-dark a:hover {
+    color: #f7af17;
+}
+
+.liquid-lp-read-more .btn-txt:hover~.btn-line {
+    background-color: #f7af17;
+}
+
+#latest-updates .liquid-lp-excerpt {
+    color: rgba(24, 27, 49, 1);
+}
+
+
+/* Blue Box Cyber Essentials Plus */
+
+.o2c-blue-box {
+    color: #ffffff !important;
+}
+
+.o2c-blue-box ul {
+    list-style-position: outside;
+    margin-left: 17px;
+}
+
+.o2c-blue-box ul li {
+    padding-bottom: 10px;
+}
+
+
+/* About us Timeline */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .middle-row {
+        width: 33%;
+    }
+    .bottom-row {
+        width: 50%;
+    }
+}
+
+ul#cyberessentials body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ul li,
+body .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ul li,
+ul#cyberessentialsplus body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ul li,
+body .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ul li {
+    list-style: none !important;
+    list-style-position: outside;
+}
+
+ul#cyberessentials li {
+    display: flex;
+}
+
+ul#cyberessentialsplus li {
+    display: revert;
+}
+
+body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ul li::before,
+body .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ul li::before {
+    font-family: 'Falanx';
+    content: "\e903";
+    padding-right: 10px;
+    color: #f7af17;
+}
+
+body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ul li,
+body .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ul li p {
+    font-family: 'Arial';
+    padding-top: 0px !important;
+    font-weight: 300;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'falanx';
+    src: url('fonts/falanx402e.html?p2hvik');
+    src: url('fonts/falanx402e.html?p2hvik#iefix') format('embedded-opentype'), url('fonts/falanx402e-2.html?p2hvik') format('truetype'), url('fonts/falanx402e-3.html?p2hvik') format('woff'), url('fonts/falanx402e-4.html?p2hvik#falanx') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.vexicon-tick:before {
+    content: "\e903";
+    padding-right: 30px;
+}
+
+.vexicon-Consult:before {
+    content: "\e900";
+}
+
+.vexicon-Assessment:before {
+    content: "\e901";
+    color: #000;
+    transition: 0.3s;
+    font-family: 'falanx';
+    font-size: 75px;
+    line-height: 30px;
+    padding-top: 20px;
+}
+
+.tickbox-field table tbody th {
+    padding-top: 50px !important;
+}
+
+.vexicon-Assessment:hover:before {
+    color: #f7af17;
+}
+
+
+}
+.vexicon-Portal:before {
+    content: "\e902";
+}
+
+/* iPad Rev Slider */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .intro-text3 {
+        padding-top: 30px !important;
+    }
+}
+.wt-cli-iframe-placeholder {
+    padding-top: 0px !important;
+}
+#field_2_43 .gfield_consent_label,
+#field_2_28 .gfield_consent_label,
+#field_3_37 .gfield_consent_label,
+#field_3_28 .gfield_consent_label {
+    display: inline !important;
+    font-size: 15px;
+}
+#field_2_35 .row2,
+#field_3_35 .row2 {
+    padding: 8.5em !important;
+}
+.wt-cli-iframe-placeholder {
+    margin-top: -55%;
+    margin-bottom: -10%;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .wt-cli-iframe-placeholder {
+        margin-top: -55%;
+        margin-bottom: 0px;
+    }
+}
+
+/* IE11 FIX */
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    .iconbox h3 {
+        width: 100% !important;
+    }
+}
+.cli-tab-footer .cli-btn {
+    background-color: rgb(18, 33, 53);
+    border-radius: 0px;
+}
+.cli-tab-footer .cli-btn:hover,
+.cli_settings_button:hover {
+    background-color: #f7af17 !important;
+    opacity: 1;
+}
+.cli_settings_button {
+    border-radius: 0px !important;
+}
+.cli_action_button {
+    border-radius: 0px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #what-we-do-footer h3,
+    #who-we-are-footer h3,
+    #contact-footer h3 {
+        font-size: 16px !important;
+    }
+    
+    #what-we-do-footer,
+    #who-we-are-footer,
+    #contact-footer {
+        width: 33%;
+    }
+    
+    .ipad-full-width {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    #what-we-do-footer h3,
+    #who-we-are-footer h3,
+    #contact-footer h3 {
+        font-size: 16px !important;
+    }
+    
+    #menu-item-7496>li>a {
+        line-height: 10px;
+    }
+    
+    #what-we-do-footer,
+    #who-we-are-footer {
+        width: 28%;
+    }
+    
+    #contact-footer {
+        width: 40%
+    }
+}
+
+/* CSS For Placeholder Map Block */
+.wt-msg {
+    color: black;
+    background-color: #f1f1f1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    line-height: normal;
+    margin-top: -2% !important;
+}
+#ld-1601975898455-40cd82e7-e1ef {
+    margin-top: -2% !important;
+}
+
+}
+
+/* Password Protected */
+.post-password-form {
+    padding-top: 6% !important;
+    text-align: center !important;
+}
