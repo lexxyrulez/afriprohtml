@@ -1643,7 +1643,7 @@
 				}
 			}
 			
-			@media screen and (max-width: 1199px) {
+			@media screen and (max-width: 1200px) {
 				body {
 					overflow-x: hidden;
 				}
@@ -1806,7 +1806,7 @@
 				.main-header .header-module {
 					display: none;
 				}
-				.navbar-collapse .header-module {
+				bar-collapse .header-module {
 					display: flex;
 					margin-left: 0 !important;
 					margin-right: 0 !important;

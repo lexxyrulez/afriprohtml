@@ -10,6 +10,11 @@
     --lqd-content-width: 1200px
 }
 
+@media screen and (min-width: 1100px) and (max-width: 1600px) {
+    #my-content{ display: none; }   /* hide it on larger screens */
+  }
+
+
 @-webkit-keyframes fadeIn {
     from {
         opacity: 0
@@ -19,6 +24,8 @@
         opacity: 1
     }
 }
+
+
 
 @keyframes fadeIn {
     from {
